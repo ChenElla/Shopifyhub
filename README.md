@@ -1,1 +1,1 @@
-# SpotifyHub
+# ShopifyHub
