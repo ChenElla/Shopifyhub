@@ -1,0 +1,19 @@
+
+#root{
+    height:100vh;
+    box-sizing: border-box;
+    padding-top:0;
+    overflow:hidden;
+}
+.page_background{
+    height:100%;
+    z-index:-1;
+    // background-image:url('../assets/images/conference_background.jpeg');
+    background-image:url('../assets/images/conference_background2.avif');
+    background-position: center;
+    background-size: cover;
+    opacity:0.4;
+}
+.column_background{
+    background-image: linear-gradient(white, transparent);
+}
