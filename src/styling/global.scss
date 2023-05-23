@@ -12,8 +12,19 @@
     background-image:url('../assets/images/conference_background2.avif');
     background-position: center;
     background-size: cover;
-    opacity:0.4;
+    opacity:0.2;
 }
 .column_background{
     background-image: linear-gradient(white, transparent);
+}
+.breakline{
+    background-color:rgba(grey,0.6);
+    border:none;
+    padding-top:1px;
+}
+img{
+    object-fit: contain;
+}
+.list_column{
+    width:100%;
 }

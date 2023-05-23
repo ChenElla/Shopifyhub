@@ -7,6 +7,7 @@ import comment_icon from '../../../assets/icons/ConversationMinor.svg';
 import share_icon from '../../../assets/icons/ShareMinor.svg';
 import repost_icon from '../../../assets/icons/repost_icon.jpeg';
 import instagram_image from '../../../assets/images/instagram_image.webp';
+import { dateConverter } from '../../../functions/DateConverter';
 import PropTypes from 'prop-types';
 Post.propTypes = {
   post:PropTypes.object
@@ -38,14 +39,19 @@ export default function Post({post}) {
   }
   return (
     <div className = "items-center rounded-lg bg-white shadow-xl box-border p-4 m-8">
-        <div className = "relative flex justify-start p-2 pb-0 text-slate-500 text-sm ">
-          <span className = "underline text-slate-600 pr-1">{post.username}</span> shared {content}
+        <div className = "relative flex justify-between p-2 pb-0 text-slate-500 text-sm">
+          <div>
+            <span className = "underline text-slate-600 pr-1">{post.username}</span> shared {content}
+          </div>
           {post.type=="channel"&&<div className= "absolute top-10 left-2 p-2 shadow-sm bg-green-900/50 text-white font-semibold rounded-lg text-sm hover:cursor-pointer hover:bg-green-900">
             Tap to Join Channel
           </div>}
+          <div>
+            {dateConverter(post.timestamp)}
+          </div>
         </div>
         <div className = "p-2 flex flex-row justify-between w-full">
-          {((post.type=="channel"||post.type=="youtube"||post.type=="instagram"))&&<div className = "flex flex-col items-center w-5/6">
+          {((post.type=="channel"||post.type=="youtube"||post.type=="instagram"))&&<div className = "flex flex-col items-center w-1/5">
             {post.type=='youtube'&&
             <img className = "pt-2 w-1/1 hover:cursor-pointer" src = {youtube_image} alt="Youtube_image"/>}
             {post.type=='channel'&&
@@ -58,7 +64,7 @@ export default function Post({post}) {
               {post.title}
             </div>}
           </div>}
-          <div className = {(post.type=="channel"||post.type=="youtube"||post.type=="instagram")?"text-base text-left pl-6":"text-base text-left"}>
+          <div className = {(post.type=="channel"||post.type=="youtube"||post.type=="instagram")?"text-base text-left pl-6 w-4/5":"text-base text-left w-4/5"}>
             {post.content_text}
           </div>
         </div>

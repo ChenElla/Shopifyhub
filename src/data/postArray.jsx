@@ -6,7 +6,7 @@ const posts = [
                 like:0,
                 comment:[
                 ],
-                timestamp:1682684954
+                timestamp:(new Date(2023, 4, 20, 12, 30, 0, 0)).getTime()
             },{
                 type:"instagram",
                 username:"Abhijeet M.",
@@ -14,7 +14,7 @@ const posts = [
                 like:0,
                 comment:[
                 ],
-                timestamp:1678829281
+                timestamp:(new Date(2023, 3, 2, 8, 25, 8, 0)).getTime()
             },{
                 type:"channel",
                 username:"Rachel M.",
@@ -23,7 +23,7 @@ const posts = [
                 like:3,
                 comment:[
                 ],
-                timestamp:1681932481
+                timestamp:(new Date(2023, 2, 20, 5, 17, 20, 40)).getTime()
             },
             {
                 type:"twitter",
@@ -32,7 +32,7 @@ const posts = [
                 like:2,
                 comment:[
                 ],
-                timestamp:1679607365
+                timestamp:(new Date(2023, 2, 10, 12, 17, 40, 40)).getTime()
             }
 ];
 
