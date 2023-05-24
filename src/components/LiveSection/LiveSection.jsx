@@ -168,7 +168,7 @@ export default function LiveSection() {
               <div className="text-left ml-5 mb-2 text-slate-600 font-normal">Unmuted</div>
             </div>
           </div>
-          <div className="flex flex-row w-full">
+          <div className="flex flex-row w-full shadow-sm">
             <input className = "ml-2 mt-2 mb-2 w-4/5 pl-2 text-sm rounded-sm" placeholder = "Type message here..."/> 
             <button className = "rounded-sm bg-green-800 w-1/5 m-2 hover:bg-slate-800 hover:bg-green-1000 text-white text-xs ">SEND</button>
           </div>
