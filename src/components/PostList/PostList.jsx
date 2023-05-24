@@ -51,7 +51,7 @@ export default function PostList({ type }) {
         {" "}
         <a
           className="mr-2 ml-2 hover:underline hover:cursor-pointer"
-          href="https://account.shopify.com"
+          href="https://accounts.shopify.com/"
         >
           Welcome to Shopify
         </a>
