@@ -12,14 +12,14 @@ TopBar.propTypes = {
 export default function TopBar({setMain}) {
     const [open, setOpen] = useState(false);
   return (
-    <div className = "flex flex-row justify-between items-baseline w-full bg-green-900 shadow-xl text-white">
+    <div className = "absolute top-0 flex flex-row justify-between items-baseline w-full bg-green-900 shadow-xl text-white">
         <div className = "flex flex-row justify-start items-center p-4 hover:cursor-pointer" onClick = {()=>setMain('posts')}>
-            <a href= "https://community.shopify.com/c/shopify-community/ct-p/en"><img className = "w-10 h-10 brightness-200 hover:brightness-0 mr-3" src={back_icon} alt="back_to_community" /></a>
+            <a href= "https://community.shopify.com/c/shopify-community/ct-p/en"><img className = "w-6 h-6 brightness-200 hover:brightness-0 mr-3" src={back_icon} alt="back_to_community" /></a>
             <div className = "flex flex-row items-center justify-start">
             <img className = "h-12" src= {logo} alt="shopifyHub_logo"/><span className = "italic text-4xl font-thin text-white">hub</span>
             </div>
         </div>
-        <div className = "flex flex-row items-baseline text-white text-base justify-between w-1/2">
+        <div className = "flex flex-row items-center text-white text-base justify-between w-1/2">
             <a className = "hover:underline" href="https://apps.shopify.com/">My Shopify Store</a>
             <a className = "hover:underline" href="https://community.shopify.com/c/shopify-community/ct-p/en">Shopify Community</a>
             <a className = "hover:underline" href="https://academy.shopify.com/">Shopify Academy</a>

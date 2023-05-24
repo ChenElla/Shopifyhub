@@ -12,6 +12,9 @@ export default {
       borderRadius:{
         'sm':'5px',
       },
+      padding:{
+        "container":'80px',
+      },
       colors:{
         'bage':{
           50:'rgba(235, 236, 239, 1)'

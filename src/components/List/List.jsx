@@ -31,12 +31,6 @@ export default function List({about,header_context,setChannel,setMain}) {
             icon=channel_icon;
             header_icon = channel_header;
             break;
-        case "chat":
-            arr = privateList;
-            icon=chat_icon;
-            header_icon = message_icon;
-            initAvai=true;
-            break;
         case "trend":
             arr = trendingTopics;
             icon=topics_icon;

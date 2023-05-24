@@ -11,7 +11,7 @@ import el_icon from "../../assets/user_icons/ella.png";
 
 export default function LiveSection() {
   return (
-    <div className="w-full">
+    <div className="w-full min-h-full pb-10">
       <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-green-1000 to-transparent">
         Live
       </div>
@@ -147,7 +147,7 @@ export default function LiveSection() {
           <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-green-1000 to-transparent">
             Chat
           </div>
-          <div className="bg-transparent w-full h-40 overflow-y-auto">
+          <div className="bg-transparent w-full h-40 min-h-40 overflow-y-auto">
             <div className="flex flex-col justify-start bg-bage-50/25 m-2">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
@@ -169,9 +169,9 @@ export default function LiveSection() {
               <div className="text-left ml-5 mb-2 text-slate-600 font-normal">Unmuted</div>
             </div>
           </div>
-          <div className="flex flex-row ">
-            <input className = "ml-2 mt-2 mb-2 w-50 pl-2 rounded-sm" placeholder = "Type message here..."/> 
-            <button className = "rounded-sm bg-green-800 w-full m-2 hover:bg-slate-800 hover:bg-green-1000 text-white text-xs ">SEND</button>
+          <div className="flex flex-row w-full">
+            <input className = "ml-2 mt-2 mb-2 w-4/5 pl-2 text-sm rounded-sm" placeholder = "Type message here..."/> 
+            <button className = "rounded-sm bg-green-800 w-1/5 m-2 hover:bg-slate-800 hover:bg-green-1000 text-white text-xs ">SEND</button>
           </div>
         </div>
       </div>

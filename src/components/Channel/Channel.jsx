@@ -89,10 +89,6 @@ export default function Channel({ channel, setMain}) {
       </div>
       <div className="relative chatWindow w-2/3 bg-slate-50 shadow-lg box-border h-1/1">
         <div className="flex flex-row justify-start bg-gradient-to-r from-bage-50 to-white items-center p-2 box-border">
-          {/* <img className = "w-10 h-10 rounded-full bg-white" src={ab_icon} alt = "abhijeet_usericon"/>
-                <div className = "ml-2 text-white text-lg">
-                    {user} <span className = "text-slate-200">- active</span>
-                </div> */}
           <div className="ml-2 text-slate-800 flex flex-row items-center"><img className="h-4 w-4 mr-1" src={hashtag_icon} alt="hash_tag" />
               <div>{sub}</div> 
             </div>
