@@ -1,4 +1,3 @@
-import React from "react";
 import sp_icon from "../../assets/user_icons/sophie.png";
 import PropTypes from "prop-types";
 Message.propTypes = {
