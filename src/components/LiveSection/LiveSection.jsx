@@ -170,7 +170,7 @@ export default function LiveSection() {
             </div>
           </div>
           <div className="flex flex-row ">
-            <input className = "ml-2 mt-2 mb-2 w-50 pl-2 rounded-5" placeholder = "Type message here..."/> 
+            <input className = "ml-2 mt-2 mb-2 w-50 pl-2 rounded-sm" placeholder = "Type message here..."/> 
             <button className = "rounded-sm bg-green-800 w-full m-2 hover:bg-slate-800 hover:bg-green-1000 text-white text-xs ">SEND</button>
           </div>
         </div>

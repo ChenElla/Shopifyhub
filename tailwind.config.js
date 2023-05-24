@@ -10,7 +10,7 @@ export default {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       borderRadius:{
-        'sm':'5px'
+        'sm':'5px',
       },
       colors:{
         'bage':{

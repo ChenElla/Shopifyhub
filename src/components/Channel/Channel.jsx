@@ -156,9 +156,10 @@ export default function Channel({ channel, setMain}) {
         </div>
         <form onSubmit = {submitHandler} className="flex flex-row justify-start w-full box-border absolute bottom-20 right-0">
           <input
-            className="w-4/5 pl-5 pr-2 text-left box-border rounded-5"
+            className="w-4/5 pl-5 pr-2 text-left box-border rounded-sm"
             placeholder="Type your message here"
             name = "message_input"
+
           />
           <button className="h-10 pr-3 w-1/5 pl-3 box-border text-normal text-white bg-green-800 rounded-sm hover:cursor-pointer hover:bg-green-900" >
             SEND

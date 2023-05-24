@@ -53,7 +53,7 @@ export default function PostList({type}) {
             <form className = "flex flex-col items-center w-9/10 bg-white box-border shadow-xl rounded-lg m-8 mb-0 mt-0 p-6 pb-3" onSubmit= {submitHandler}>
                 <div className = "flex flex-row justify-between items-center box-border w-full">
                     <img className = "rounded-full w-14 h-14 mr-2 box-border bg-slate-300" src= {user_icon} alt= "user_icon"/>
-                    <input className= "rounded-sx border w-full box-border p-3 pt-1 pb-7 min-h-80" type = "text" name = "content_text" placeholder = "Share what you have been up to!" required/>
+                    <input className= "rounded-sm border w-full box-border p-3 pt-1 pb-7 min-h-80" type = "text" name = "content_text" placeholder = "Share what you have been up to!" required/>
                 </div>
                 <div className = "flex flex-row justify-between m-3 w-full">
                     <fieldset className = "flex flex-row justify-start w-4/5 flex-wrap ">
@@ -89,14 +89,6 @@ export default function PostList({type}) {
                             <img className = "w-6 h-6" src={link_icon} alt="link_icon" />
                             <label className= "text-1xl p-1 hover:cursor-pointer">Link</label>
                         </div>
-                        {/* <div className = "pr-2">
-                            <input type="radio" id="event" name="type" value="event" />
-                            <label htmlFor="event" className= "text-1xl p-1">Event</label>
-                        </div>
-                        <div className = "pr-2">
-                            <input type="radio" id="link" name="type" value="link" />
-                            <label htmlFor="link" className= "text-1xl p-1">Link</label>
-                        </div> */}
                     </fieldset>
                     <button className = "rounded-sm pl-4 pr-4 pt-1 pb-1 bg-green-700 h-10 uppercase text-white w-1/5 font-semibold hover:bg-green-900 hover:cursor-pointer ">
                         Post
