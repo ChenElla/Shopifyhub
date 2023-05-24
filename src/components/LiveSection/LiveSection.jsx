@@ -148,23 +148,23 @@ export default function LiveSection() {
             Chat
           </div>
           <div className="bg-transparent w-full h-40 min-h-40 overflow-y-auto">
-            <div className="flex flex-col justify-start bg-bage-50/25 m-2">
+            <div className="flex flex-col justify-start bg-bage-50/25 m-2 rounded-sm">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
                   <img className="w-8 h-8 rounded-full bg-white mr-1" src={sp_icon} alt="sophie_usericon" />
                   <div className ="text-white">Me</div>
                 </div>
-                <div className="text-slate-500 ">8:30 pm</div>
+                <div className="text-slate-500 text-sm">8:30 pm</div>
               </div>
               <div className="text-left ml-5 mb-2 font-black font-normal">I love the idea!</div>
             </div>
-            <div className="flex flex-col justify-start bg-bage-50/25 m-2">
+            <div className="flex flex-col justify-start bg-bage-50/25 m-2 rounded-sm">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
                   <img className="w-8 h-8 rounded-full bg-white mr-1" src={rc_icon} alt="rachel_usericon" />
                   <div className ="text-white">Rachel</div>
                 </div>
-                <div className="text-slate-500 ">8:32 pm</div>
+                <div className="text-slate-500 text-sm">8:32 pm</div>
               </div>
               <div className="text-left ml-5 mb-2 text-slate-600 font-normal">Unmuted</div>
             </div>
