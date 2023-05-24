@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import user_icon from '../../assets/user_icons/sophie.png';
 import youtube_icon from '../../assets/icons/youtube.png';
@@ -9,7 +8,6 @@ import photo_icon from '../../assets/icons/photo.png';
 import pinterest_icon from '../../assets/icons/Pinterest.png';
 import facebook_icon from '../../assets/icons/facebook.png';
 import link_icon from '../../assets/icons/LinkMinor.svg';
-
 import posts from '../../data/postArray';
 import Post from './Post/Post';
 import { useEffect } from 'react';
@@ -46,12 +44,12 @@ export default function PostList({type}) {
         }
         let newPostArray = postArray.sort((a,b)=>b.timestamp-a.timestamp);
         setPostArray(newPostArray);
-        console.log(newPostArray);
     },[postArray,type])
     
     return (
         <div className = "overflow-y-auto h-screen flex flex-col box-border bg-slate-50 w-3/5 mr-0 ml-0 mb-4 pb-10 box-border " >
-            <div className = "italic flex flex-start ml-8 mt-2 mb-2"> {">"} <a className = "mr-2 ml-2 hover:underline hover:cursor-pointer" href="https://community.shopify.com/c/shopify-community/ct-p/en">Shopify Community</a> {">"} <span className = "underline ml-2" > ShopifyHub</span></div>
+            {/* <div className = "flex flex-row justify-start items-center mt-4 w-fit pr-2 pl-2 hover:cursor-pointer hover:bg-slate-300"><img className= "w-6 h-6 mr-2" src={back_icon} alt="back_icon"/><div className= "text-lg">Back</div></div> */}
+            <div className = "italic text-white flex flex-start ml-0 mt-4 mb-4 pl-8 bg-gradient-to-r from-green-900 via-slate-200 to-green-900">  <a className = "mr-2 ml-2 hover:underline hover:cursor-pointer" href="https://account.shopify.com">Welcome to Shopify</a> {">"} <span className = "underline ml-2" > ShopifyHub</span></div>
             <form className = "flex flex-col items-center w-9/10 bg-white box-border shadow-xl rounded-lg m-8 mb-0 mt-0 p-6 pb-3" onSubmit= {submitHandler}>
                 <div className = "flex flex-row justify-between items-center box-border w-full">
                     <img className = "rounded-full w-14 h-14 mr-2 box-border bg-slate-300" src= {user_icon} alt= "user_icon"/>
@@ -91,7 +89,6 @@ export default function PostList({type}) {
                             <img className = "w-6 h-6" src={link_icon} alt="link_icon" />
                             <label className= "text-1xl p-1 hover:cursor-pointer">Link</label>
                         </div>
-                        
                         {/* <div className = "pr-2">
                             <input type="radio" id="event" name="type" value="event" />
                             <label htmlFor="event" className= "text-1xl p-1">Event</label>
@@ -101,7 +98,7 @@ export default function PostList({type}) {
                             <label htmlFor="link" className= "text-1xl p-1">Link</label>
                         </div> */}
                     </fieldset>
-                    <button className = "rounded-full pl-4 pr-4 pt-1 pb-1 bg-green-700 h-10 uppercase text-white w-1/5 font-semibold hover:bg-green-900 hover:cursor-pointer ">
+                    <button className = "rounded-sm pl-4 pr-4 pt-1 pb-1 bg-green-700 h-10 uppercase text-white w-1/5 font-semibold hover:bg-green-900 hover:cursor-pointer ">
                         Post
                     </button>
                 </div>

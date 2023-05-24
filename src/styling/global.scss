@@ -5,18 +5,7 @@
     padding-top:0;
     overflow:hidden;
 }
-.page_background{
-    height:100%;
-    z-index:-1;
-    // background-image:url('../assets/images/conference_background.jpeg');
-    background-image:url('../assets/images/conference_background2.avif');
-    background-position: center;
-    background-size: cover;
-    opacity:0.2;
-}
-.column_background{
-    background-image: linear-gradient(white, transparent);
-}
+
 .breakline{
     background-color:rgba(grey,0.6);
     border:none;

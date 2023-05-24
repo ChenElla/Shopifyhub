@@ -5,11 +5,7 @@ import channel_header from '../../assets/icons/Channel.png';
 import trend_icon from '../../assets/icons/Trending.png';
 import message_icon from '../../assets/icons/Messages.png';
 import plus_button from '../../assets/icons/CirclePlusMajor.svg';
-import ab_icon from '../../assets/user_icons/abhijeet.jpg';
-import sr_icon from '../../assets/user_icons/sara.jpg';
-import rc_icon from '../../assets/user_icons/rachel.jpg';
-import ml_icon from '../../assets/user_icons/melissa.png';
-import el_icon from '../../assets/user_icons/ella.png';
+
 import {channelArray, channelBrowse, privateList, trendingTopics} from '../../data/listArray';
 import PropTypes from 'prop-types';
 List.propTypes = {

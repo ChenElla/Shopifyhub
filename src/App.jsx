@@ -7,10 +7,11 @@ import Footer from './components/Footer/Footer';
 import { useState } from 'react';
 import LiveSection from './components/LiveSection/LiveSection';
 import Channel from './components/Channel/Channel';
+import ChatList from './components/ChatList/ChatList';
 function App() {
   const [main,setMain] = useState("posts");
   const [channel,setChannel] = useState('Black Business Owners');
-  const [type, setType] = useState('all');
+  const type = "all";
   return (
     <div className = "relative">
       <TopBar setMain = {setMain}/>
@@ -21,9 +22,9 @@ function App() {
           <hr className = "w-full mt-2 mb-2 breakline"/>
           <List header_context= "Browse Channels" about = "channelB" setChannel = {setChannel} setMain = {setMain}/>
           <hr className = "w-full mt-2 mb-2 breakline"/>
-          <List header_context= "Inbox Messaging" about = "chat" />
+          <ChatList header_context= "Inbox Messaging" />
         </div>
-        {main == "posts"?(<PostList type = {type}/>):(<Channel channel = {channel}/>)}
+        {main == "posts"?(<PostList type = {type}/>):(<Channel channel = {channel} setMain = {setMain}/>)}
         <div className = "flex flex-col flex-1 items-center ml-0 mr-0 p-4 w-1/5 column_background">
           <List header_context= "Trending Topics" about = "trend"/>
           <hr className = "w-full mt-2 mb-2 breakline"/>

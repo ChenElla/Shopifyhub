@@ -1,5 +1,3 @@
-import React from "react";
-import user_icon from "../../assets/icons/userIcon.avif";
 
 import video_off_icon from "../../assets/icons/video_off.png";
 import micro_icon from "../../assets/icons/MicrophoneMajor.svg";
@@ -14,12 +12,12 @@ import el_icon from "../../assets/user_icons/ella.png";
 export default function LiveSection() {
   return (
     <div className="w-full">
-      <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-500 to-transparent">
+      <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-green-1000 to-transparent">
         Live
       </div>
-      <div className="bg-gradient-to-br from-slate-900 to-transparent w-full shadow-lg">
+      <div className="bg-gradient-to-br from-green-1000 to-transparent w-full shadow-lg">
         <div className="text-xl text-white mb-5 pt-5">
-          Black Business Owners
+          Instagram Marketing
         </div>
         <div className="flex flex-row pr-3 pl-3 pb-2 justify-between w-1/1">
           <div className="flex flex-col w-1/3 items-center">
@@ -146,11 +144,11 @@ export default function LiveSection() {
           </div>
         </div>
         <div>
-          <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-800 to-transparent">
+          <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-green-1000 to-transparent">
             Chat
           </div>
-          <div className="bg-white/25 w-full h-40 overflow-y-auto">
-            <div className="flex flex-col justify-start bg-white/25 m-2">
+          <div className="bg-transparent w-full h-40 overflow-y-auto">
+            <div className="flex flex-col justify-start bg-bage-50/25 m-2">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
                   <img className="w-8 h-8 rounded-full bg-white mr-1" src={sp_icon} alt="sophie_usericon" />
@@ -160,7 +158,7 @@ export default function LiveSection() {
               </div>
               <div className="text-left ml-5 mb-2 font-black font-normal">I love the idea!</div>
             </div>
-            <div className="flex flex-col justify-start bg-white/25 m-2">
+            <div className="flex flex-col justify-start bg-bage-50/25 m-2">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
                   <img className="w-8 h-8 rounded-full bg-white mr-1" src={rc_icon} alt="rachel_usericon" />
@@ -172,8 +170,8 @@ export default function LiveSection() {
             </div>
           </div>
           <div className="flex flex-row ">
-            <input className = "ml-2 mt-2 mb-2 w-50 pl-1 rounded-sm" placeholder = "Type message here..."/> 
-            <button className = "rounded-sm bg-white w-full m-2 hover:bg-slate-800 hover:text-white">SEND</button>
+            <input className = "ml-2 mt-2 mb-2 w-50 pl-2 rounded-5" placeholder = "Type message here..."/> 
+            <button className = "rounded-sm bg-green-800 w-full m-2 hover:bg-slate-800 hover:bg-green-1000 text-white text-xs ">SEND</button>
           </div>
         </div>
       </div>
