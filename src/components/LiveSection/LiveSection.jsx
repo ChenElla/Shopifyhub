@@ -1,4 +1,3 @@
-
 import video_off_icon from "../../assets/icons/video_off.png";
 import micro_icon from "../../assets/icons/MicrophoneMajor.svg";
 import mute_icon from "../../assets/icons/mute_icon.png";
@@ -12,21 +11,21 @@ import el_icon from "../../assets/user_icons/ella.png";
 export default function LiveSection() {
   return (
     <div className="w-full min-h-full pb-10">
-      <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-green-1000 to-transparent">
+      <div className="text-black pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-300 to-transparent">
         Live
       </div>
-      <div className="bg-gradient-to-br from-green-1000 to-transparent w-full shadow-lg">
-        <div className="text-xl text-white mb-5 pt-5">
+      <div className="bg-gradient-to-br from-slate-200 to-transparent w-full shadow-lg">
+        <div className="text-xl text-black mb-5 pt-5">
           Instagram Marketing
         </div>
         <div className="flex flex-row pr-3 pl-3 pb-2 justify-between w-1/1">
-          <div className="flex flex-col w-1/3 items-center">
+          <div className="flex flex-col w-1/3 items-center ">
             <img
-              className="w-10 h-10 bg-slate-300 rounded-full border border-white border-5 "
+              className="w-10 h-10 bg-slate-300 rounded-full border border-black border-5 "
               src={rc_icon}
               alt="rachel_user_icon"
             />
-            <div className="text-slate-100 italic text-sm">Rachel M.</div>
+            <div className="text-slate-900 italic text-sm">Rachel M.</div>
             <div className="flex flex-row justify-between">
               <img
                 className="w-4 h-4 mr-3 rounded-full bg-white p-1"
@@ -42,11 +41,11 @@ export default function LiveSection() {
           </div>
           <div className="flex flex-col w-1/3 items-center">
             <img
-              className="w-10 h-10 bg-slate-300 rounded-full border border-white border-5 "
+              className="w-10 h-10 bg-slate-300 rounded-full border border-black border-5 "
               src={ml_icon}
               alt="melissa_user_icon"
             />
-            <div className="text-slate-100 italic text-sm">Melissa L.</div>
+            <div className="text-slate-900 italic text-sm">Melissa L.</div>
             <div className="flex flex-row justify-between">
               <img
                 className="w-4 h-4 mr-3 rounded-full bg-white p-1"
@@ -62,11 +61,11 @@ export default function LiveSection() {
           </div>
           <div className="flex flex-col w-1/3 items-center">
             <img
-              className="w-10 h-10 bg-slate-300 rounded-full border border-white border-5 "
+              className="w-10 h-10 bg-slate-300 rounded-full border border-black border-5 "
               src={sp_icon}
               alt="sophie_user_icon"
             />
-            <div className="text-slate-100 italic text-sm">Me</div>
+            <div className="text-slate-900 italic text-sm">Me</div>
             <div className="flex flex-row justify-between">
               <img
                 className="w-4 h-4 mr-3 rounded-full bg-white p-1"
@@ -84,11 +83,11 @@ export default function LiveSection() {
         <div className="flex flex-row pr-3 pl-3 pb-10 justify-between w-1/1">
           <div className="flex flex-col w-1/3 items-center">
             <img
-              className="w-10 h-10 bg-slate-300 rounded-full border border-white border-5 "
+              className="w-10 h-10 bg-slate-300 rounded-full border border-black border-5 "
               src={el_icon}
               alt="ella_user_icon"
             />
-            <div className="text-slate-100 italic text-sm">Ella C.</div>
+            <div className="text-slate-900 italic text-sm">Ella C.</div>
             <div className="flex flex-row justify-between">
               <img
                 className="w-4 h-4 mr-3 rounded-full bg-white p-1"
@@ -104,11 +103,11 @@ export default function LiveSection() {
           </div>
           <div className="flex flex-col w-1/3 items-center ">
             <img
-              className="w-10 h-10 bg-slate-500 rounded-full border border-white border-5 "
+              className="w-10 h-10 bg-slate-500 rounded-full border border-black border-5 "
               src={sr_icon}
               alt="sara_user_icon"
             />
-            <div className="text-slate-100 italic text-sm">Sara N.</div>
+            <div className="text-slate-900 italic text-sm">Sara N.</div>
             <div className="flex flex-row justify-between">
               <img
                 className="w-4 h-4 mr-3 rounded-full bg-white p-1"
@@ -124,11 +123,11 @@ export default function LiveSection() {
           </div>
           <div className="flex flex-col w-1/3 items-center">
             <img
-              className="w-10 h-10 bg-slate-500 rounded-full border border-white border-5 "
+              className="w-10 h-10 bg-slate-500 rounded-full border border-black border-5 "
               src={ab_icon}
               alt="abhijeet_user_icon"
             />
-            <div className="text-slate-100 italic text-sm">Abhijeet M.</div>
+            <div className="text-slate-900 italic text-sm">Abhijeet M.</div>
             <div className="flex flex-row justify-between">
               <img
                 className="w-4 h-4 mr-3 rounded-full bg-white p-1"
@@ -144,25 +143,25 @@ export default function LiveSection() {
           </div>
         </div>
         <div>
-          <div className="text-white pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-green-1000 to-transparent">
+          <div className="text-black pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-300 to-transparent">
             Chat
           </div>
           <div className="bg-transparent w-full h-40 min-h-40 overflow-y-auto">
-            <div className="flex flex-col justify-start bg-bage-50/25 m-2 rounded-sm">
+            <div className="flex flex-col justify-start bg-white rounded-sm m-2">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
-                  <img className="w-8 h-8 rounded-full bg-white mr-1" src={sp_icon} alt="sophie_usericon" />
-                  <div className ="text-white">Me</div>
+                  <img className="w-8 h-8 rounded-full bg-black mr-1" src={sp_icon} alt="sophie_usericon" />
+                  <div className ="text-black">Me</div>
                 </div>
                 <div className="text-slate-500 text-sm">8:30 pm</div>
               </div>
               <div className="text-left ml-5 mb-2 font-black font-normal">I love the idea!</div>
             </div>
-            <div className="flex flex-col justify-start bg-bage-50/25 m-2 rounded-sm">
+            <div className="flex flex-col justify-start bg-white rounded-sm m-2">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
-                  <img className="w-8 h-8 rounded-full bg-white mr-1" src={rc_icon} alt="rachel_usericon" />
-                  <div className ="text-white">Rachel</div>
+                  <img className="w-8 h-8 rounded-full bg-black mr-1" src={rc_icon} alt="rachel_usericon" />
+                  <div className ="text-black">Rachel</div>
                 </div>
                 <div className="text-slate-500 text-sm">8:32 pm</div>
               </div>
@@ -178,3 +177,4 @@ export default function LiveSection() {
     </div>
   );
 }
+
