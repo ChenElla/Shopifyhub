@@ -65,15 +65,15 @@ We apologize for any inconvenience caused by this temporary limitation and assur
 Link to slides will be updated here
 
 ## Support
-If you encounter any issues or have any questions, please reach out to our support team at ella.cheny@gmail.com. We are here to help you make the most out of your ShopifyHub experience.
+If you encounter any issues or have any questions, please reach out to our support team at ella.cheny@gmail.com. We are here to help you make the most out of your Shopify Hub experience.
 
 ## Contributing
-We welcome contributions from the community to improve Shopifyhub. If you have any suggestions, bug reports, or feature requests, please submit them through our GitHub repository. We appreciate your input and collaboration.
+We welcome contributions from the community to improve Shopify Hub. If you have any suggestions, bug reports, or feature requests, please submit them through our GitHub repository. We appreciate your input and collaboration.
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
 ## Acknowledgements
-We would like to express our gratitude to Shopify and BrainStation for their support and inspiration. Without their contributions, Shopifyhub would not be possible. Thank you!
+We would like to express our gratitude to Shopify and BrainStation for their support and inspiration. Without their contributions, Shopify Hub would not be possible. Thank you!
 
 
