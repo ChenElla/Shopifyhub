@@ -37,6 +37,8 @@ export default function Post({post}) {
       content = "a post"
       // code block
   }
+  const content_text = post.content_text.split('\n');
+  console.log(content_text[0]);
   return (
     <div className = "items-center rounded-lg bg-white shadow-xl box-border p-4 m-8">
         <div className = "relative flex justify-between p-2 pb-0 text-slate-500 text-sm">
@@ -64,8 +66,12 @@ export default function Post({post}) {
               {post.title}
             </div>}
           </div>}
-          <div className = {(post.type=="channel"||post.type=="youtube"||post.type=="instagram")?"text-base text-left pl-6 w-4/5":"text-base text-left w-4/5"}>
-            {post.content_text}
+          <div className = {(post.type=="channel"||post.type=="youtube"||post.type=="instagram")?"text-base text-left pl-6 w-4/5 pb-2":"text-base text-left w-5/5 pb-2"}>
+            {content_text.map((text,index)=>(
+              <div key = {index} className = "text-left">{text}<br/></div>
+              ))} 
+            <br/>
+            <p className = "text-blue-800 text-left">{post.hash_tags}</p>
           </div>
         </div>
         <hr/>
