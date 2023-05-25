@@ -19,7 +19,12 @@ export default function TopBar({ setMain }) {
             className="flex flex-row justify-start items-center p-4 hover:cursor-pointer"
             onClick={() => setMain("posts")}
         >
-            <a href="https://community.shopify.com/c/shopify-community/ct-p/en" rel="noopener noreferrer" target="_blank">
+            <a
+            href="https://community.shopify.com/c/shopify-community/ct-p/en"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Shopify Community"
+            >
             <img
                 className="w-6 h-6 brightness-200 hover:brightness-0 mr-3"
                 src={back_icon}
@@ -32,21 +37,40 @@ export default function TopBar({ setMain }) {
             </div>
         </div>
         <div className="flex flex-row items-center text-white text-base justify-between w-1/2">
-            <a className="hover:underline" href="https://apps.shopify.com/" rel="noopener noreferrer" target="_blank">
+            <a
+            className="hover:underline"
+            href="https://apps.shopify.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="My Shopify Store"
+            >
             My Shopify Store
             </a>
             <a
-                className="hover:underline"
-                href="https://community.shopify.com/c/shopify-community/ct-p/en"
-                rel="noopener noreferrer" 
-                target="_blank"
+            className="hover:underline"
+            href="https://community.shopify.com/c/shopify-community/ct-p/en"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Shopify Community"
             >
             Shopify Community
             </a>
-            <a className="hover:underline" href="https://academy.shopify.com/" rel="noopener noreferrer" target="_blank">
+            <a
+            className="hover:underline"
+            href="https://academy.shopify.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Shopify Academy"
+            >
             Shopify Academy
             </a>
-            <a className="hover:underline" href="https://www.shopify.com/learn" rel="noopener noreferrer" target="_blank">
+            <a
+            className="hover:underline"
+            href="https://www.shopify.com/learn"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Shopify Learn"
+            >
             Shopify Learn
             </a>
         </div>

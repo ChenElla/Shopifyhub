@@ -7,117 +7,118 @@ import arrow_icon from "../../assets/icons/CircleDownMajor.svg";
 import { useState } from "react";
 
 import {
-  channelArray,
-  channelBrowse,
-  trendingTopics,
+    channelArray,
+    channelBrowse,
+    trendingTopics,
 } from "../../data/listArray";
 
-import {
-  instructions
-} from '../../data/instructions';
+import { instructions } from "../../data/instructions";
 
 import PropTypes from "prop-types";
 List.propTypes = {
-  about: PropTypes.string,
-  header_context: PropTypes.string,
-  setChannel: PropTypes.func,
-  setMain: PropTypes.func,
+    about: PropTypes.string,
+    header_context: PropTypes.string,
+    setChannel: PropTypes.func,
+    setMain: PropTypes.func,
 };
 export default function List({ about, header_context, setChannel, setMain }) {
-  let arr;
-  let icon;
-  let header_icon;
-  let main;
-  const [instructionOn, setInstructionOn] = useState(false);
-  const instruction_text = instructions[`${header_context}`].split('\n');
-  switch (about) {
-    case "channel":
-      arr = channelArray;
-      icon = channel_icon;
-      header_icon = channel_header;
-      main = "channel";
-      break;
-    case "channelB":
-      arr = channelBrowse;
-      icon = channel_icon;
-      header_icon = channel_header;
-      main = "channel";
-      break;
-    case "trend":
-      arr = trendingTopics;
-      icon = topics_icon;
-      header_icon = trend_icon;
-      main = "posts";
-      break;
-    default:
-      arr = channelArray;
-      icon = channel_icon;
-  }
-  return (
-    <div className="list_column mb-2 ml-0 mr-0 box-border">
-      <div className="relative flex flex-row justify-between items-center mb-2">
-        <div className="flex flex-row justify-start items-center underline">
-          <img className="w-5 h-5 mr-2" src={header_icon} alt="header_icon" />
-          <div
-            className="text-lg font-semibold hover:cursor-help"
-            onMouseOver={() => setInstructionOn(true)}
-            onMouseOut={() => setInstructionOn(false)}
-            alt="what does this column do?"
-          >
-            {header_context}
-          </div>
+    let arr;
+    let icon;
+    let header_icon;
+    let main;
+    const [instructionOn, setInstructionOn] = useState(false);
+    const instruction_text = instructions[`${header_context}`].split("\n");
+    switch (about) {
+        case "channel":
+        arr = channelArray;
+        icon = channel_icon;
+        header_icon = channel_header;
+        main = "channel";
+        break;
+        case "channelB":
+        arr = channelBrowse;
+        icon = channel_icon;
+        header_icon = channel_header;
+        main = "channel";
+        break;
+        case "trend":
+        arr = trendingTopics;
+        icon = topics_icon;
+        header_icon = trend_icon;
+        main = "posts";
+        break;
+        default:
+        arr = channelArray;
+        icon = channel_icon;
+    }
+    return (
+        <div className="list_column mb-2 ml-0 mr-0 box-border">
+        <div className="relative flex flex-row justify-between items-center mb-2">
+            <div className="flex flex-row justify-start items-center underline">
+            <img className="w-5 h-5 mr-2" src={header_icon} alt="header_icon" />
+            <div
+                className="text-lg font-semibold hover:cursor-help"
+                onMouseOver={() => setInstructionOn(true)}
+                onMouseOut={() => setInstructionOn(false)}
+                alt="what does this column do?"
+            >
+                {header_context}
+            </div>
+            </div>
+            <img
+            className="w-6 h-6 click_function_not_implemented hover:border-white rounded-full border-2"
+            src={plus_button}
+            alt="plus_button"
+            />
+            <img
+            className={
+                !instructionOn
+                ? "hidden"
+                : "z-20 absolute w-10 h-10 left-1/3 top-3 p-2 border-3 z-50 border-green-800 w-2/3 min-h-max -rotate-45"
+            }
+            src={arrow_icon}
+            alt="arrow-icon"
+            />
+            <div
+            className={
+                !instructionOn
+                ? "hidden"
+                : "text-left absolute text-sm bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"
+            }
+            >
+            {instruction_text.map((text, index) => (
+                <div key={index} className="text-left">
+                {text}
+                <br />
+                </div>
+            ))}
+            </div>
         </div>
-        <img
-          className="w-6 h-6 click_function_not_implemented hover:border-white rounded-full border-2"
-          src={plus_button}
-          alt="plus_button"
-        />
-        <img
-          className={
-            !instructionOn
-              ? "hidden"
-              : "z-20 absolute w-10 h-10 left-1/3 top-3 p-2 border-3 z-50 border-green-800 w-2/3 min-h-max -rotate-45"
-          }
-          src={arrow_icon}
-          alt="arrow-icon"
-        />
-        <div
-          className={
-            !instructionOn
-              ? "hidden"
-              : "text-left absolute text-sm bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"
-          }
-        >
-          {instruction_text.map((text,index)=>(
-              <div key = {index} className = "text-left">{text}<br/></div>
-              ))} 
-        </div>
-      </div>
-      <div className="flex flex-col pr-2 pl-2">
-        {arr.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-row justify-start items-center p-1 hover:bg-slate-200 cursor-pointer w-1/1"
-            onClick={() => {
+        <div className="flex flex-col pr-2 pl-2">
+            {arr.map((item, index) => (
+            <div
+                key={index}
+                className="flex flex-row justify-start items-center p-1 hover:bg-slate-200 cursor-pointer w-1/1"
+                onClick={() => {
                 setChannel(item.title);
                 setMain(main);
-            }}
-          >
-            <img
-              className="w-7 h-7 mr-2 p-1 bg-slate-300 rounded-full"
-              src={icon}
-              alt="icon"
-            />
-            <div className="flex flex-col justify-start items-start">
-              <div className="text-sm text-left">{item.title}</div>
-              <div className="text-sm text-slate-500 text-left">{item.sub}</div>
+                }}
+            >
+                <img
+                className="w-7 h-7 mr-2 p-1 bg-slate-300 rounded-full"
+                src={icon}
+                alt="icon"
+                />
+                <div className="flex flex-col justify-start items-start">
+                <div className="text-sm text-left">{item.title}</div>
+                <div className="text-sm text-slate-500 text-left">{item.sub}</div>
+                </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="click_function_not_implemented text-sm underline pt-1 text-green-800 hover:text-green-900 hover:font-semibold">
-        See More
-      </div>
-    </div>
-  );
+            ))}
+        </div>
+        <div className="click_function_not_implemented text-sm underline pt-1 text-green-800 hover:text-green-900 hover:font-semibold">
+            See More
+        </div>
+        </div>
+    );
 }
