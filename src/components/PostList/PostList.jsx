@@ -49,13 +49,15 @@ export default function PostList({ type }) {
     <div className="overflow-y-auto h-screen flex flex-col box-border bg-slate-50 w-3/5 mr-0 ml-0 mb-4 pb-10 box-border ">
       <div className="italic text-white flex flex-start ml-0 mt-4 mb-4 pl-8 bg-gradient-to-r from-green-900 via-slate-200 to-green-900">
         {" "}
-        <a
+        <a 
           className="mr-2 ml-2 hover:underline hover:cursor-pointer"
           href="https://accounts.shopify.com/"
+          rel="noopener noreferrer" 
+          target="_blank"
         >
           Welcome to Shopify
         </a>
-        {">"} <span className="underline ml-2"> ShopifyHub</span>
+        {">"} <span className="underline ml-2"> Shopifyhub</span>
       </div>
       <form
         className="flex flex-col items-center w-9/10 bg-white box-border shadow-xl rounded-lg m-8 mb-0 mt-0 p-6 pb-3"

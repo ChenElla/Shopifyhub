@@ -45,17 +45,19 @@ export default function Post({post}) {
           <div>
             <span className = "underline text-slate-600 pr-1">{post.username}</span> shared {content}
           </div>
-          {post.type=="channel"&&<div className= "absolute top-10 left-2 p-2 shadow-sm bg-green-900/50 text-white font-semibold rounded-lg text-sm hover:cursor-pointer hover:bg-green-900">
-            Tap to Join Channel
-          </div>}
+          
           <div>
             {dateConverter(post.timestamp)}
           </div>
         </div>
         <div className = "p-2 flex flex-row justify-between w-full">
+          
           {((post.type=="channel"||post.type=="youtube"||post.type=="instagram"))&&<div className = "flex flex-col items-center w-1/5">
             {post.type=='youtube'&&
             <img className = "pt-2 w-1/1 hover:cursor-pointer" src = {youtube_image} alt="Youtube_image"/>}
+            {post.type=="channel"&&<div className= "left-2 p-2 shadow-sm bg-green-800 text-white font-semibold rounded-sm text-xs hover:cursor-pointer hover:bg-green-900">
+              Tap to Join Channel
+            </div>}
             {post.type=='channel'&&
             <img className = "pt-2 w-1/1" src = {channel_image} alt="Channel_image"/>
             }

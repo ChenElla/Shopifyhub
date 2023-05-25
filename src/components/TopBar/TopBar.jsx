@@ -19,7 +19,7 @@ export default function TopBar({ setMain }) {
             className="flex flex-row justify-start items-center p-4 hover:cursor-pointer"
             onClick={() => setMain("posts")}
         >
-            <a href="https://community.shopify.com/c/shopify-community/ct-p/en">
+            <a href="https://community.shopify.com/c/shopify-community/ct-p/en" rel="noopener noreferrer" target="_blank">
             <img
                 className="w-6 h-6 brightness-200 hover:brightness-0 mr-3"
                 src={back_icon}
@@ -32,19 +32,21 @@ export default function TopBar({ setMain }) {
             </div>
         </div>
         <div className="flex flex-row items-center text-white text-base justify-between w-1/2">
-            <a className="hover:underline" href="https://apps.shopify.com/">
+            <a className="hover:underline" href="https://apps.shopify.com/" rel="noopener noreferrer" target="_blank">
             My Shopify Store
             </a>
             <a
-            className="hover:underline"
-            href="https://community.shopify.com/c/shopify-community/ct-p/en"
+                className="hover:underline"
+                href="https://community.shopify.com/c/shopify-community/ct-p/en"
+                rel="noopener noreferrer" 
+                target="_blank"
             >
             Shopify Community
             </a>
-            <a className="hover:underline" href="https://academy.shopify.com/">
+            <a className="hover:underline" href="https://academy.shopify.com/" rel="noopener noreferrer" target="_blank">
             Shopify Academy
             </a>
-            <a className="hover:underline" href="https://www.shopify.com/learn">
+            <a className="hover:underline" href="https://www.shopify.com/learn" rel="noopener noreferrer" target="_blank">
             Shopify Learn
             </a>
         </div>
