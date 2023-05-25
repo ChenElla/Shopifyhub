@@ -58,6 +58,12 @@ Please be aware that certain components within our website are designed to be cl
 
 We apologize for any inconvenience caused by this temporary limitation and assure you that we are actively working to implement the necessary functionality. Thank you for your understanding and patience as we continue to enhance the user experience.
 
+## Our Team
+![image](https://github.com/ChenElla/Shopifyhub/assets/69126129/78c2f380-08cf-4f99-b6f3-dfe783a11981)
+
+## More About Our Project
+Link to slides will be updated here
+
 ## Support
 If you encounter any issues or have any questions, please reach out to our support team at ella.cheny@gmail.com. We are here to help you make the most out of your ShopifyHub experience.
 
