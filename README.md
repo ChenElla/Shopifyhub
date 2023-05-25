@@ -26,8 +26,12 @@ To get started with Shopifyhub, follow these simple steps:
 
 1. Visit our deployed website at: https://shopify-hub.vercel.app/
 2. Log in using your shopify account (not functional now, by default the user is set to our persona Sophie)
-3. Start exploring the different channels available or create your own. 
-4. Contribute to the community by sharing your insights, joining discussions, or connecting with other members.
+3. Check what each section does by putting your mouse on different section title. 
+   <br/>ex.![image](https://github.com/ChenElla/Shopifyhub/assets/69126129/59e02d67-0482-40f0-815f-adb45c61e077) 
+   <br/>![image](https://github.com/ChenElla/Shopifyhub/assets/69126129/57daeadd-f02c-46ee-8ddf-5f22523677cb)
+
+4. Start exploring the different channels available or create your own. 
+5. Contribute to the community by sharing your insights, joining discussions, or connecting with other members.
 
 **Important Note: Current Website Limitations**
 
