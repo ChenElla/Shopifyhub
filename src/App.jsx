@@ -11,7 +11,7 @@ import "./styling/global.scss";
 function App() {
   const [main, setMain] = useState("posts");
   const [channel, setChannel] = useState("Black Business Owners");
-  const type = "all";
+  const type = "all";//for future filtering usage (type can be used as a state)
   return (
     <div className="relative">
       <TopBar setMain={setMain} />
@@ -34,7 +34,7 @@ function App() {
           <ChatList header_context="Inbox Messaging" />
         </div>
         {main == "posts" ? (
-          <PostList type={type} />
+          <PostList type={type} /> //if type is set to 'youtube' it would only show all the youtube related posts
         ) : (
           <Channel channel={channel} setMain={setMain} />
         )}

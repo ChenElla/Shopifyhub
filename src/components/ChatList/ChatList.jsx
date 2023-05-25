@@ -1,4 +1,3 @@
-
 import message_icon from "../../assets/icons/Messages.png";
 import plus_button from "../../assets/icons/CirclePlusMajor.svg";
 import ab_icon from "../../assets/user_icons/abhijeet.jpg";
@@ -6,7 +5,9 @@ import sr_icon from "../../assets/user_icons/sara.jpg";
 import rc_icon from "../../assets/user_icons/rachel.jpg";
 import ml_icon from "../../assets/user_icons/melissa.png";
 import el_icon from "../../assets/user_icons/ella.png";
+
 import { privateList } from "../../data/listArray";
+
 import PropTypes from "prop-types";
 ChatList.propTypes = {
   about: PropTypes.string,
@@ -14,12 +15,9 @@ ChatList.propTypes = {
   setChannel: PropTypes.func,
   setMain: PropTypes.func,
 };
-export default function ChatList({
-  header_context,
-  setChannel,
-  setMain,
-}) {
-  const profile_image = [ab_icon,sr_icon,rc_icon,ml_icon,el_icon]
+
+export default function ChatList({ header_context, setChannel, setMain }) {
+  const profile_image = [ab_icon, sr_icon, rc_icon, ml_icon, el_icon];
   const arr = privateList;
   const header_icon = message_icon;
   return (
@@ -46,9 +44,9 @@ export default function ChatList({
             }}
           >
             <img
-                className="w-7 h-7 mr-2 p-0 bg-slate-300 rounded-full"
-                src={profile_image[index]}
-                alt="icon"
+              className="w-7 h-7 mr-2 p-0 bg-slate-300 rounded-full"
+              src={profile_image[index]}
+              alt="icon"
             />
             <div className="flex flex-col justify-start items-start">
               <div className="text-sm">{item.title}</div>

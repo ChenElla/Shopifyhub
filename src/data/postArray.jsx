@@ -10,7 +10,8 @@ const posts = [
             },{
                 type:"instagram",
                 username:"Abhijeet M.",
-                content_text:"Anim do tempor tempor dolor sint proident incididunt exercitation fugiat. Velit pariatur aliquip veniam quis. Incididunt magna minim adipisicing nulla irure anim. Qui do culpa sit in adipisicing ipsum sit. Lorem pariatur eiusmod ad eu pariatur exercitation eiusmod ad.",
+                content_text:"📣 Exciting Updates! 🎉 \n Sharing my latest business milestones and growth journey on ShopifyHub! \n 🚀 💼 As a proud member of this vibrant community, I’m thrilled to showcase the progress I’ve made with my Shopify store. From launching my online store to reaching new customers, it’s been an incredible ride! :star2::sparkles: Join me on ShopifyHub, where entrepreneurs like us come together to connect, collaborate, and learn from each other’s experiences. :handshake::bulb: Let’s inspire and support each other as we navigate the world of e-commerce. :globe_with_meridians::chart_with_upwards_trend: Check out my post to learn more about my business development and dive into the amazing world of Shopify entrepreneurship! :muscle::fire: ",
+                hash_tags:'#ShopifyHub #BusinessGrowth #EntrepreneurJourney #CommunityOfSuccess #EcommerceAdventures',
                 like:0,
                 comment:[
                 ],
@@ -38,3 +39,4 @@ const posts = [
 
 
 export default posts;
+

@@ -1,5 +1,3 @@
-import React from 'react'
-import './Post.scss';
 import youtube_image from '../../../assets/images/youtube_hero.webp';
 import channel_image from '../../../assets/images/channels_icon.jpeg';
 import like_icon from '../../../assets/icons/ThumbsUpMinor.svg';
@@ -8,10 +6,12 @@ import share_icon from '../../../assets/icons/ShareMinor.svg';
 import repost_icon from '../../../assets/icons/repost_icon.jpeg';
 import instagram_image from '../../../assets/images/instagram_image.webp';
 import { dateConverter } from '../../../functions/DateConverter';
+
 import PropTypes from 'prop-types';
 Post.propTypes = {
   post:PropTypes.object
 };
+
 export default function Post({post}) {
   let content;
   switch(post.type) {

@@ -1,9 +1,11 @@
 import sp_icon from "../../assets/user_icons/sophie.png";
+
 import PropTypes from "prop-types";
 Message.propTypes = {
-  message:PropTypes.string
+  message: PropTypes.string,
 };
-export default function Message({message}) {
+
+export default function Message({ message }) {
   return (
     <div className="flex flex-row m-2 justify-end">
       <div className=" text-white text-lg flex flex-col justify-start">

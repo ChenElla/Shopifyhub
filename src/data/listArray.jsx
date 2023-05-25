@@ -22,8 +22,6 @@ const privateList = [
 const trendingTopics = [
     {title:"Instagram marketing",sub:"132 posts today"},
     {title:"Pinterest marketing",sub:"106 posts today"},
-    // {title:"Facebook marketing",sub:"94 posts today"},
-    // {title:"Twitter marketing",sub:"84 posts today"}
 ];
 
 export {channelArray, channelBrowse, privateList, trendingTopics};

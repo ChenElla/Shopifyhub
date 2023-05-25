@@ -15,9 +15,7 @@ export default function LiveSection() {
         Live
       </div>
       <div className="bg-gradient-to-br from-slate-200 to-transparent w-full shadow-lg">
-        <div className="text-xl text-black mb-5 pt-5">
-          Instagram Marketing
-        </div>
+        <div className="text-xl text-black mb-5 pt-5">Instagram Marketing</div>
         <div className="flex flex-row pr-3 pl-3 pb-2 justify-between w-1/1">
           <div className="flex flex-col w-1/3 items-center ">
             <img
@@ -150,31 +148,47 @@ export default function LiveSection() {
             <div className="flex flex-col justify-start bg-white rounded-sm m-2">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
-                  <img className="w-8 h-8 rounded-full bg-black mr-1" src={sp_icon} alt="sophie_usericon" />
-                  <div className ="text-black">Me</div>
+                  <img
+                    className="w-8 h-8 rounded-full bg-black mr-1"
+                    src={sp_icon}
+                    alt="sophie_usericon"
+                  />
+                  <div className="text-black">Me</div>
                 </div>
                 <div className="text-slate-500 text-sm">8:30 pm</div>
               </div>
-              <div className="text-left ml-5 mb-2 font-black font-normal">I love the idea!</div>
+              <div className="text-left ml-5 mb-2 font-black font-normal">
+                I love the idea!
+              </div>
             </div>
             <div className="flex flex-col justify-start bg-white rounded-sm m-2">
               <div className="flex flex-row justify-between items-center p-3">
                 <div className="flex flex-row justify-start items-center">
-                  <img className="w-8 h-8 rounded-full bg-black mr-1" src={rc_icon} alt="rachel_usericon" />
-                  <div className ="text-black">Rachel</div>
+                  <img
+                    className="w-8 h-8 rounded-full bg-black mr-1"
+                    src={rc_icon}
+                    alt="rachel_usericon"
+                  />
+                  <div className="text-black">Rachel</div>
                 </div>
                 <div className="text-slate-500 text-sm">8:32 pm</div>
               </div>
-              <div className="text-left ml-5 mb-2 text-slate-600 font-normal">Unmuted</div>
+              <div className="text-left ml-5 mb-2 text-slate-600 font-normal">
+                Unmuted
+              </div>
             </div>
           </div>
           <div className="flex flex-row w-full shadow-sm">
-            <input className = "ml-2 mt-2 mb-2 w-4/5 pl-2 text-sm rounded-sm" placeholder = "Type message here..."/> 
-            <button className = "rounded-sm bg-green-800 w-1/5 m-2 hover:bg-slate-800 hover:bg-green-1000 text-white text-xs ">SEND</button>
+            <input
+              className="ml-2 mt-2 mb-2 w-4/5 pl-2 text-sm rounded-sm"
+              placeholder="Type message here..."
+            />
+            <button className="rounded-sm bg-green-800 w-1/5 m-2 hover:bg-slate-800 hover:bg-green-1000 text-white text-xs ">
+              SEND
+            </button>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
