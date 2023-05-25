@@ -6,7 +6,7 @@
 Manage and customize the channels you have joined on Shopify Hub.
 Stay organized and access the channels that are most relevant to you.
 ### Browse Channels
-Discover a diverse array of Shopifyhub channels to join for inspiration and networking.
+Discover a diverse array of Shopify Hub channels to join for inspiration and networking.
 Explore different topics and industries to expand your knowledge.
 ### Post Section
 Share your Shopify success stories, strategies, and media with the Shopify Hub community.
