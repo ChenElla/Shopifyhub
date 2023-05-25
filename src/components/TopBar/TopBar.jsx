@@ -67,17 +67,17 @@ export default function TopBar({ setMain }) {
                 : "hidden"
             }
             >
-            <div className="flex flex-row justify-start items-center p-2 hover:bg-slate-200 hover:cursor-pointer">
+            <div className="flex flex-row justify-start items-center p-2 hover:bg-slate-200 click_function_not_implemented">
                 <img className="w-7 h-7 pr-2" src={profile_icon} />
                 <div className="text-slate-500">Profile</div>
             </div>
-            <div className="flex flex-row justify-start items-center p-2 hover:bg-slate-200 hover:cursor-pointer">
+            <div className="flex flex-row justify-start items-center p-2 hover:bg-slate-200 click_function_not_implemented">
                 <img className="w-7 h-7 pr-2" src={setting_icon} />
                 <div className="text-slate-500">Settings</div>
             </div>
             <hr />
             <hr />
-            <div className="flex flex-row justify-start items-center p-2 hover:bg-slate-200 hover:cursor-pointer">
+            <div className="flex flex-row justify-start items-center p-2 hover:bg-slate-200 click_function_not_implemented">
                 <img className="w-7 h-7 pr-2" src={logout_icon} />
                 <div className="text-slate-500">Log Out</div>
             </div>
