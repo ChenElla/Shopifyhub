@@ -15,14 +15,39 @@ ChatList.propTypes = {
   setChannel: PropTypes.func,
   setMain: PropTypes.func,
 };
-
+import arrow_icon from "../../assets/icons/CircleDownMajor.svg";
+import { useState } from "react";
+import { instructions } from "../../data/instructions";
 export default function ChatList({ header_context, setChannel, setMain }) {
   const profile_image = [ab_icon, sr_icon, rc_icon, ml_icon, el_icon];
   const arr = privateList;
   const header_icon = message_icon;
+  const [instructionOn, setInstructionOn] = useState(false);
   return (
     <div className="list_column mb-2 ml-0 mr-0 box-border">
-      <div className="flex flex-row justify-between items-center mb-2">
+      <div
+        className="relative flex flex-row justify-between items-center mb-2"
+        onMouseOver={() => setInstructionOn(true)}
+        onMouseOut={() => setInstructionOn(false)}
+      >
+        <img
+          className={
+            !instructionOn
+              ? "hidden"
+              : "z-20 absolute w-10 h-10 left-1/3 top-3 p-2 border-3 z-50 border-green-800 w-2/3 min-h-max -rotate-45"
+          }
+          src={arrow_icon}
+          alt="arrow-icon"
+        />
+        <div
+          className={
+            !instructionOn
+              ? "hidden"
+              : "absolute text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"
+          }
+        >
+          {instructions['Inbox Messaging']}
+        </div>
         <div className="flex flex-row justify-start items-center underline">
           <img className="w-5 h-5 mr-2" src={header_icon} alt="header_icon" />
           <div className="text-lg font-semibold">{header_context}</div>

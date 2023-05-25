@@ -7,13 +7,22 @@ import sr_icon from "../../assets/user_icons/sara.jpg";
 import rc_icon from "../../assets/user_icons/rachel.jpg";
 import ml_icon from "../../assets/user_icons/melissa.png";
 import el_icon from "../../assets/user_icons/ella.png";
-
+import arrow_icon from '../../assets/icons/CircleDownMajor.svg';
+import {useState} from 'react';
+import { instructions } from "../../data/instructions";
 export default function LiveSection() {
+  const [instructionOn, setInstructionOn] = useState(false);
   return (
     <div className="w-full min-h-full pb-10">
-      <div className="text-black pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-300 to-transparent">
+      <div className="relative text-black pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-300 to-transparent" onMouseOver={()=>setInstructionOn(true)} onMouseOut = {()=>setInstructionOn(false)}>
         Live
+        <img className = {!instructionOn?"hidden":"z-20 absolute w-10 h-10 left-1/3 top-3 p-2 border-3 z-50 border-green-800 w-2/3 min-h-max -rotate-45"} src={arrow_icon} alt = "arrow-icon"/>
+        <div className = {!instructionOn?"hidden":"absolute font-normal text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"}>
+             {instructions["Live Section"]}
+        </div>
       </div>
+      
+
       <div className="bg-gradient-to-br from-slate-200 to-transparent w-full shadow-lg">
         <div className="text-xl text-black mb-5 pt-5">Instagram Marketing</div>
         <div className="flex flex-row pr-3 pl-3 pb-2 justify-between w-1/1">

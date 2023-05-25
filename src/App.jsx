@@ -11,9 +11,14 @@ import "./styling/global.scss";
 function App() {
   const [main, setMain] = useState("posts");
   const [channel, setChannel] = useState("Black Business Owners");
+  const [highlightColumn, setHighlightColumn] = useState(false);
+  const [instructionOn, setInstructionOff] = useState(false);
   const type = "all";//for future filtering usage (type can be used as a state)
+  const handleInstruction = () => {
+    
+  }
   return (
-    <div className="relative">
+    <div className = "relative">
       <TopBar setMain={setMain} />
       <div className="main_container flex flex-row justify-center w-full">
         <div className="overflow-y-auto h-screen min-h-screen column_background flex flex-col items-center box-border w-1/5 ml-2 mr-2 mt-4 pr-4 pl-4 pt-4 list_container ">

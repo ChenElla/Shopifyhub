@@ -105,7 +105,7 @@ export default function Channel({ channel, setMain }) {
           </div>
         </div>
         <hr className="breakline bg-slate-300 w-full" />
-        <div className="p-4 flex flex-col justify-start mb-0 h-full box-border w-1/1 bg-gradient-to-br from-slate-100 to-bage-50">
+        <div className="p-4 flex flex-col justify-start mb-0 h-full text-left box-border w-1/1 bg-gradient-to-br from-slate-100 to-bage-50">
           <div className="flex flex-row m-2">
             <img
               className="w-10 h-10 rounded-full bg-white"
