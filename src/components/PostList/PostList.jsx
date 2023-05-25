@@ -65,7 +65,7 @@ export default function PostList({ type }) {
             >
             Welcome to Shopify
             </a>
-            {">"} <span className="underline ml-2"> Shopifyhub</span>
+            {">"} <span className="underline ml-2"> Shopify Hub</span>
         </div>
         <div className="text-green-900 text-lg mb-2 pl-8 text-left">
             Welcome to{" "}
@@ -74,7 +74,7 @@ export default function PostList({ type }) {
             onMouseOver={() => setInstructionOn(true)}
             onMouseOut={() => setInstructionOn(false)}
             >
-            Shopifyhub Post Section
+            Shopify Hub Post Section
             <img
                 className={
                 !instructionOn
