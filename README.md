@@ -1,6 +1,6 @@
 # Shopify Hub
 
-**Shopify Hub** is a website dedicated to building a connected community for new Shopify merchants. Our goal is to provide a platform where entrepreneurs can collaborate, learn from each other, and foster their growth.
+**Shopify Hub** is an extension of Shopify Community dedicated to building a connected community for new Shopify merchants. Our goal is to provide an interactive platform where entrepreneurs can collaborate, learn from each other, and foster their growth.
 ## Key Functions
 ### Your Channels
 Manage and customize the channels you have joined on Shopify Hub.
