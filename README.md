@@ -68,6 +68,6 @@ We welcome contributions from the community to improve Shopifyhub. If you have a
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
 ## Acknowledgements
-We would like to express our gratitude to the Shopify community for their support and inspiration. Without their contributions, Shopifyhub would not be possible. Thank you!
+We would like to express our gratitude to the Shopify and BrainStation for their support and inspiration. Without their contributions, Shopifyhub would not be possible. Thank you!
 
 
