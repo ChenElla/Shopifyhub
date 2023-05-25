@@ -74,19 +74,19 @@ export default function Channel({ channel, setMain }) {
             <img className="w-4 h-4 pr-2" src={cd_icon} alt="expand"></img>
             <div className="uppercase text-sm">Voice Channels</div>
           </div>
-          <div className="p-2 pt-1 pb-1 flex flex-row justify-between hover:bg-slate-400 hover:text-white hover:cursor-pointer">
+          <div className="p-2 pt-1 pb-1 flex flex-row justify-between hover:bg-slate-400 hover:text-white click_function_not_implemented">
             <div className="flex flex-row items-center">
               <img className="h-4 w-4 mr-1" src={sound_icon} alt="sound_icon" />
               <div>general</div>
             </div>
           </div>
-          <div className="p-2 pt-1 pb-1 flex flex-row justify-between hover:bg-slate-400 hover:text-white hover:cursor-pointer">
+          <div className="p-2 pt-1 pb-1 flex flex-row justify-between hover:bg-slate-400 hover:text-white click_function_not_implemented">
             <div className="flex flex-row items-center">
               <img className="h-4 w-4 mr-1" src={sound_icon} alt="sound_icon" />
               <div>casual talks</div>
             </div>
           </div>
-          <div className="p-2 pt-1 pb-1 flex flex-row justify-between hover:bg-slate-400 hover:text-white hover:cursor-pointer">
+          <div className="p-2 pt-1 pb-1 flex flex-row justify-between hover:bg-slate-400 hover:text-white click_function_not_implemented">
             <div className="flex flex-row items-center">
               <img className="h-4 w-4 mr-1" src={sound_icon} alt="sound_icon" />
               <div>conference</div>
