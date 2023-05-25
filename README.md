@@ -1,28 +1,28 @@
-# Shopifyhub
+# Shopify Hub
 
-**Shopifyhub** is a website dedicated to building a connected community for new Shopify merchants. Our goal is to provide a platform where entrepreneurs can collaborate, learn from each other, and foster their growth.
+**Shopify Hub** is a website dedicated to building a connected community for new Shopify merchants. Our goal is to provide a platform where entrepreneurs can collaborate, learn from each other, and foster their growth.
 ## Key Functions
 ### Your Channels
-Manage and customize the channels you have joined on Shopifyhub.
+Manage and customize the channels you have joined on Shopify Hub.
 Stay organized and access the channels that are most relevant to you.
 ### Browse Channels
 Discover a diverse array of Shopifyhub channels to join for inspiration and networking.
 Explore different topics and industries to expand your knowledge.
 ### Post Section
-Share your Shopify success stories, strategies, and media with the Shopifyhub community.
+Share your Shopify success stories, strategies, and media with the Shopify Hub community.
 Inspire others and contribute to the collective growth of the community.
 ### Trending Topics
-Stay updated with the hottest discussions and trends within the Shopifyhub community.
+Stay updated with the hottest discussions and trends within the Shopify Hub community.
 Engage in conversations that are relevant and timely.
 ### Inbox Messaging
 Connect and network with fellow Shopify entrepreneurs through private messages.
 Foster relationships, seek advice, and collaborate with like-minded individuals.
 ### Live Section
-Engage in real-time video or audio conference discussions within Shopifyhub channels.
+Engage in real-time video or audio conference discussions within Shopify Hub channels.
 Participate in interactive sessions, webinars, and Q&A sessions to enhance your knowledge and skills.
 
 ## Getting Started
-To get started with Shopifyhub, follow these simple steps:
+To get started with Shopify Hub, follow these simple steps:
 
 1. Visit our deployed website at: https://shopify-hub.vercel.app/
 2. Log in using your shopify account (not functional now, by default the user is set to our persona Sophie)
