@@ -10,20 +10,17 @@ import { privateList } from "../../data/listArray";
 
 import PropTypes from "prop-types";
 ChatList.propTypes = {
-  about: PropTypes.string,
   header_context: PropTypes.string,
-  setChannel: PropTypes.func,
-  setMain: PropTypes.func,
 };
 import arrow_icon from "../../assets/icons/CircleDownMajor.svg";
 import { useState } from "react";
 import { instructions } from "../../data/instructions";
-export default function ChatList({ header_context, setChannel, setMain }) {
+export default function ChatList({ header_context }) {
   const profile_image = [ab_icon, sr_icon, rc_icon, ml_icon, el_icon];
   const arr = privateList;
   const header_icon = message_icon;
   const [instructionOn, setInstructionOn] = useState(false);
-  const instruction_text = instructions["Inbox Messaging"].split('\n');
+  const instruction_text = instructions["Inbox Messaging"].split("\n");
   return (
     <div className="list_column mb-2 ml-0 mr-0 box-border">
       <div className="relative flex flex-row justify-between items-center mb-2">
@@ -53,12 +50,15 @@ export default function ChatList({ header_context, setChannel, setMain }) {
               : "absolute text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"
           }
         >
-          {instruction_text.map((text,index)=>(
-              <div key = {index} className = "text-left">{text}<br/></div>
-              ))} 
+          {instruction_text.map((text, index) => (
+            <div key={index} className="text-left">
+              {text}
+              <br />
+            </div>
+          ))}
         </div>
         <img
-          className="w-6 h-6 hover:cursor-pointer hover:border-white rounded-full border-2"
+          className="w-6 h-6 click_function_not_implemented hover:border-white rounded-full border-2 click_function_not_implemented"
           src={plus_button}
           alt="plus_button"
         />
@@ -67,11 +67,7 @@ export default function ChatList({ header_context, setChannel, setMain }) {
         {arr.map((item, index) => (
           <div
             key={index}
-            className="flex flex-row justify-start items-center p-1 hover:bg-slate-200 cursor-pointer w-1/1"
-            onClick={() => {
-              setMain("channel");
-              setChannel(item.title);
-            }}
+            className="flex flex-row justify-start items-center p-1 hover:bg-slate-200 w-1/1 click_function_not_implemented"
           >
             <img
               className="w-7 h-7 mr-2 p-0 bg-slate-300 rounded-full"
@@ -85,7 +81,7 @@ export default function ChatList({ header_context, setChannel, setMain }) {
           </div>
         ))}
       </div>
-      <div className="text-sm underline pt-1 text-green-800 hover:text-green-900 hover:font-semibold hover:cursor-pointer">
+      <div className="click_function_not_implemented text-sm underline pt-1 text-green-800 hover:text-green-900 hover:font-semibold">
         See More
       </div>
     </div>

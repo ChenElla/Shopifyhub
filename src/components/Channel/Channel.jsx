@@ -35,7 +35,7 @@ export default function Channel({ channel, setMain }) {
           onClick={() => setMain("posts")}
         >
           <img className="w-3 h-3 mr-2" src={back_icon} alt="back_icon" />
-          <div className="text-sm">Back to Main</div>
+          <div className="text-sm">Back to Post Section</div>
         </div>
         <hr className="breakline bg-slate-300 w-full " />
         <div className="text-left pl-4 pt-2 pb-2 text-black text-xl italic bg-gradient-to-r from-slate-50 to-slate-100 shadow-sm">

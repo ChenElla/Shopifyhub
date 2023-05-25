@@ -7,9 +7,9 @@ import sr_icon from "../../assets/user_icons/sara.jpg";
 import rc_icon from "../../assets/user_icons/rachel.jpg";
 import ml_icon from "../../assets/user_icons/melissa.png";
 import el_icon from "../../assets/user_icons/ella.png";
-import arrow_icon from '../../assets/icons/CircleDownMajor.svg';
+import arrow_icon from "../../assets/icons/CircleDownMajor.svg";
 
-import {useState} from 'react';
+import { useState } from "react";
 import { instructions } from "../../data/instructions";
 
 import LiveMessage from "./LiveMessage";
@@ -17,26 +17,46 @@ import LiveMessage from "./LiveMessage";
 export default function LiveSection() {
   const [instructionOn, setInstructionOn] = useState(false);
   const [newMessages, setNewMessages] = useState([]);
-  const instruction_text = instructions["Live Section"].split('\n');
-  const messageHandler = (e)=>{
+  const instruction_text = instructions["Live Section"].split("\n");
+  const messageHandler = (e) => {
     e.preventDefault();
     const newMessagesArray = [];
-    newMessages.forEach(message=>newMessagesArray.push(message));
+    newMessages.forEach((message) => newMessagesArray.push(message));
     newMessagesArray.push(e.target.message.value);
     setNewMessages(newMessagesArray);
-  }
+  };
   return (
     <div className="w-full min-h-full pb-10">
-      <div className="relative text-black pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-300 to-transparent hover:cursor-help" onMouseOver={()=>setInstructionOn(true)} onMouseOut = {()=>setInstructionOn(false)}>
+      <div
+        className="relative text-black pl-2 text-start font-xl font-semibold uppercase bg-gradient-to-r from-slate-300 to-transparent hover:cursor-help"
+        onMouseOver={() => setInstructionOn(true)}
+        onMouseOut={() => setInstructionOn(false)}
+      >
         Live
-        <img className = {!instructionOn?"hidden":"z-20 absolute w-10 h-10 left-1/3 top-3 p-2 border-3 z-50 border-green-800 w-2/3 min-h-max -rotate-45"} src={arrow_icon} alt = "arrow-icon"/>
-        <div className = {!instructionOn?"hidden":"absolute font-normal text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"}>
-             {instruction_text.map((text,index)=>(
-              <div key = {index} className = "text-left">{text}<br/></div>
-              ))} 
+        <img
+          className={
+            !instructionOn
+              ? "hidden"
+              : "z-20 absolute w-10 h-10 left-1/3 top-3 p-2 border-3 z-50 border-green-800 w-2/3 min-h-max -rotate-45"
+          }
+          src={arrow_icon}
+          alt="arrow-icon"
+        />
+        <div
+          className={
+            !instructionOn
+              ? "hidden"
+              : "absolute font-normal text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"
+          }
+        >
+          {instruction_text.map((text, index) => (
+            <div key={index} className="text-left">
+              {text}
+              <br />
+            </div>
+          ))}
         </div>
       </div>
-      
 
       <div className="bg-gradient-to-br from-slate-200 to-transparent w-full shadow-lg">
         <div className="text-xl text-black mb-5 pt-5">Instagram Marketing</div>
@@ -201,9 +221,14 @@ export default function LiveSection() {
                 Unmuted
               </div>
             </div>
-            {newMessages.map((message,index) => <LiveMessage key = {index} message = {message}/>)}
+            {newMessages.map((message, index) => (
+              <LiveMessage key={index} message={message} />
+            ))}
           </div>
-          <form className="flex flex-row w-full shadow-sm" onSubmit = {messageHandler}>
+          <form
+            className="flex flex-row w-full shadow-sm"
+            onSubmit={messageHandler}
+          >
             <input
               className="ml-2 mt-2 mb-2 w-4/5 pl-2 text-sm rounded-sm"
               placeholder="Type message here..."

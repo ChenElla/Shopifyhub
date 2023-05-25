@@ -68,7 +68,7 @@ export default function List({ about, header_context, setChannel, setMain }) {
           </div>
         </div>
         <img
-          className="w-6 h-6 hover:cursor-pointer hover:border-white rounded-full border-2"
+          className="w-6 h-6 click_function_not_implemented hover:border-white rounded-full border-2"
           src={plus_button}
           alt="plus_button"
         />
@@ -115,7 +115,7 @@ export default function List({ about, header_context, setChannel, setMain }) {
           </div>
         ))}
       </div>
-      <div className="text-sm underline pt-1 text-green-800 hover:text-green-900 hover:font-semibold hover:cursor-pointer">
+      <div className="click_function_not_implemented text-sm underline pt-1 text-green-800 hover:text-green-900 hover:font-semibold">
         See More
       </div>
     </div>

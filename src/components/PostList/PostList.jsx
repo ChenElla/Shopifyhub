@@ -119,62 +119,62 @@ export default function PostList({ type }) {
           />
         </div>
         <div className="flex flex-row justify-between m-3 w-full">
-          <fieldset className="flex flex-row justify-start w-4/5 flex-wrap ">
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 hover:cursor-pointer">
+          <fieldset className="flex flex-row justify-start w-4/5 flex-wrap">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img className="w-6 h-6" src={photo_icon} alt="photo_icon" />
-              <label className="text-1xl p-1 hover:cursor-pointer">Photo</label>
+              <label className="text-1xl p-1">Photo</label>
             </div>
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 hover:cursor-pointer">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img className="w-6 h-6" src={channel_icon} alt="channel_icon" />
-              <label className="text-1xl p-1 hover:cursor-pointer">
+              <label className="text-1xl p-1">
                 Channel
               </label>
             </div>
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 hover:cursor-pointer">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img className="w-6 h-6" src={youtube_icon} alt="youtube_icon" />
-              <label className="text-1xl p-1 hover:cursor-pointer">
+              <label className="text-1xl p-1 click_function_not_implemented">
                 Youtube
               </label>
             </div>
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:cursor-pointer hover:bg-slate-200 ">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img
                 className="w-6 h-6"
                 src={instagram_icon}
                 alt="instagram_icon"
               />
-              <label className="text-1xl p-1 hover:cursor-pointer">
+              <label className="text-1xl p-1">
                 Instagram
               </label>
             </div>
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 hover:cursor-pointer">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img className="w-6 h-6" src={twitter_icon} alt="twitter_icon" />
-              <label className="text-1xl p-1 hover:cursor-pointer">
+              <label className="text-1xl p-1">
                 Twitter
               </label>
             </div>
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 hover:cursor-pointer">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img
                 className="w-6 h-6"
                 src={pinterest_icon}
                 alt="pinterest_icon"
               />
-              <label className="text-1xl p-1 hover:cursor-pointer">
+              <label className="text-1xl p-1">
                 Pinterest
               </label>
             </div>
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 hover:cursor-pointer">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img
                 className="w-6 h-6"
                 src={facebook_icon}
                 alt="facebook_icon"
               />
-              <label className="text-1xl p-1 hover:cursor-pointer">
+              <label className="text-1xl p-1">
                 Facebook
               </label>
             </div>
-            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 hover:cursor-pointer">
+            <div className="pr-2 pl-2 mr-1 flex flex-row justify-start items-center rounded-lg hover:bg-slate-200 click_function_not_implemented">
               <img className="w-6 h-6" src={link_icon} alt="link_icon" />
-              <label className="text-1xl p-1 hover:cursor-pointer">Link</label>
+              <label className="text-1xl p-1">Link</label>
             </div>
           </fieldset>
           <button className="rounded-sm pl-4 pr-4 pt-1 pb-1 bg-green-700 h-10 uppercase text-white w-1/5 font-semibold hover:bg-green-900 hover:cursor-pointer ">

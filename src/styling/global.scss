@@ -21,3 +21,8 @@ img{
 .list_column{
     width:100%;
 }
+.click_function_not_implemented{
+    &:hover{
+        cursor:default;
+    }
+}
