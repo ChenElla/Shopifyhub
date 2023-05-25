@@ -87,7 +87,7 @@ export default function PostList({ type }) {
             className={
               !instructionOn
                 ? "hidden"
-                : "absolute font-normal text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/4 top-8 p-2 border-3 z-10 border-green-800 w-3/4 min-h-max"
+                : "absolute not-italic font-normal text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/4 top-8 p-2 border-3 z-10 border-green-800 w-3/4 min-h-max"
             }
           >
             {instruction_text.map((text, index) => (
