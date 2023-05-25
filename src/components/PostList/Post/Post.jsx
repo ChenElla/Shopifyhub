@@ -35,17 +35,14 @@ export default function Post({post}) {
       break;
     default:
       content = "a post"
-      // code block
   }
   const content_text = post.content_text.split('\n');
-  console.log(content_text[0]);
   return (
     <div className = "items-center rounded-lg bg-white shadow-xl box-border p-4 m-8">
         <div className = "relative flex justify-between p-2 pb-0 text-slate-500 text-sm">
           <div>
             <span className = "underline text-slate-600 pr-1">{post.username}</span> shared {content}
           </div>
-          
           <div>
             {dateConverter(post.timestamp)}
           </div>

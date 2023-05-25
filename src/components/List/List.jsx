@@ -29,7 +29,7 @@ export default function List({ about, header_context, setChannel, setMain }) {
   let header_icon;
   let main;
   const [instructionOn, setInstructionOn] = useState(false);
-
+  const instruction_text = instructions[`${header_context}`].split('\n');
   switch (about) {
     case "channel":
       arr = channelArray;
@@ -48,7 +48,6 @@ export default function List({ about, header_context, setChannel, setMain }) {
       icon = topics_icon;
       header_icon = trend_icon;
       main = "posts";
-
       break;
     default:
       arr = channelArray;
@@ -56,7 +55,7 @@ export default function List({ about, header_context, setChannel, setMain }) {
   }
   return (
     <div className="list_column mb-2 ml-0 mr-0 box-border">
-      <div className="relative flex flex-row justify-between items-center mb-2">
+      <div className="relative flex flex-row justify-between items-center mb-2 hover:cursor-help">
         <div className="flex flex-row justify-start items-center underline">
           <img className="w-5 h-5 mr-2" src={header_icon} alt="header_icon" />
           <div
@@ -89,7 +88,9 @@ export default function List({ about, header_context, setChannel, setMain }) {
               : "text-left absolute text-sm bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/3 top-8 p-2 border-3 z-10 border-green-800 w-2/3 min-h-max"
           }
         >
-          {instructions[`${header_context}`]}
+          {instruction_text.map((text,index)=>(
+              <div key = {index} className = "text-left">{text}<br/></div>
+              ))} 
         </div>
       </div>
       <div className="flex flex-col pr-2 pl-2">

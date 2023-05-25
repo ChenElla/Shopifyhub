@@ -63,7 +63,7 @@ export default function TopBar({ setMain }) {
             <div
             className={
                 open
-                ? "flex flex-col justify-start shadow-xl absolute w-fit top-14 right-4 bg-white"
+                ? "flex flex-col justify-start shadow-xl absolute w-fit top-14 right-4 bg-white z-20"
                 : "hidden"
             }
             >

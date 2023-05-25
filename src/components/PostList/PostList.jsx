@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useEffect } from "react";
+
 import user_icon from "../../assets/user_icons/sophie.png";
 import youtube_icon from "../../assets/icons/youtube.png";
 import instagram_icon from "../../assets/icons/instagram.png";
@@ -8,17 +10,22 @@ import photo_icon from "../../assets/icons/photo.png";
 import pinterest_icon from "../../assets/icons/Pinterest.png";
 import facebook_icon from "../../assets/icons/facebook.png";
 import link_icon from "../../assets/icons/LinkMinor.svg";
+import arrow_icon from "../../assets/icons/CircleDownMajor.svg";
+
 import posts from "../../data/postArray";
 import Post from "./Post/Post";
-import { useEffect } from "react";
-import PropTypes from "prop-types";
+import { instructions } from "../../data/instructions";
 
+import PropTypes from "prop-types";
 PostList.propTypes = {
   type: PropTypes.string,
 };
+
 export default function PostList({ type }) {
   const postData = posts;
   const [postArray, setPostArray] = useState(postData);
+  const [instructionOn, setInstructionOn] = useState(false);
+  const instruction_text = instructions["Post Section"].split("\n");
   const submitHandler = (e) => {
     e.preventDefault();
     const newPost = {
@@ -49,15 +56,49 @@ export default function PostList({ type }) {
     <div className="overflow-y-auto h-screen flex flex-col box-border bg-slate-50 w-3/5 mr-0 ml-0 mb-4 pb-10 box-border ">
       <div className="italic text-white flex flex-start ml-0 mt-4 mb-4 pl-8 bg-gradient-to-r from-green-900 via-slate-200 to-green-900">
         {" "}
-        <a 
+        <a
           className="mr-2 ml-2 hover:underline hover:cursor-pointer"
           href="https://accounts.shopify.com/"
-          rel="noopener noreferrer" 
+          rel="noopener noreferrer"
           target="_blank"
         >
           Welcome to Shopify
         </a>
         {">"} <span className="underline ml-2"> Shopifyhub</span>
+      </div>
+      <div className="text-green-900 text-lg mb-2 pl-8 text-left">
+        Welcome to{" "}
+        <span
+          className="text-black text-xl font-semibold underline italic relative hover:cursor-help"
+          onMouseOver={() => setInstructionOn(true)}
+          onMouseOut={() => setInstructionOn(false)}
+        >
+          Shopifyhub Post Section
+          <img
+            className={
+              !instructionOn
+                ? "hidden"
+                : "z-20 absolute w-10 h-10 left-1/4 top-3 p-2 border-3 z-50 border-green-800 w-3/4 min-h-max -rotate-45"
+            }
+            src={arrow_icon}
+            alt="arrow-icon"
+          />
+          <div
+            className={
+              !instructionOn
+                ? "hidden"
+                : "absolute font-normal text-sm normal-case bg-gradient-to-br from-slate-100/75 via-white to-slate-100/75 border-slate-50 border-2 rounded-sm left-1/4 top-8 p-2 border-3 z-10 border-green-800 w-3/4 min-h-max"
+            }
+          >
+            {instruction_text.map((text, index) => (
+              <div key={index} className="text-left">
+                {text}
+                <br />
+              </div>
+            ))}
+          </div>
+        </span>
+        !
       </div>
       <form
         className="flex flex-col items-center w-9/10 bg-white box-border shadow-xl rounded-lg m-8 mb-0 mt-0 p-6 pb-3"
