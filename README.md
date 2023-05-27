@@ -62,7 +62,7 @@ We apologize for any inconvenience caused by this temporary limitation and assur
 ![image](https://github.com/ChenElla/Shopifyhub/assets/69126129/b98458a0-3153-4a40-8d7b-0cb955167d8d)
 
 ## More About Our Project
-Link to slides will be updated here
+[Link to slides](https://www.canva.com/design/DAFjkMHFLlU/_n_Rth_0D5SbABjm2SyAnw/view?utm_content=DAFjkMHFLlU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) 
 
 ## Support
 If you encounter any issues or have any questions, please reach out to our support team at ella.cheny@gmail.com. We are here to help you make the most out of your Shopify Hub experience.
