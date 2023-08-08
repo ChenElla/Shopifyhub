@@ -1,6 +1,23 @@
-# Shopify Hub
+# Shopify Hub 
 
 **Shopify Hub** is an extension of Shopify Community dedicated to building a connected community for new Shopify merchants. Our goal is to provide an interactive platform where entrepreneurs can collaborate, learn from each other, and foster their growth.
+
+## Project Overview (~1 week)
+This project was undertaken during a 1-week part-time hackathon. Given the time limitations, as the team members are primarily engaged in full-time professional commitments, our website stands as a frontend-focused prototype. Its purpose is to effectively illustrate our conceptualizations aimed at enhancing the Shopify ecosystem. However, it's important to note that the prototype does not encompass backend data-related functionalities. Our collective effort in this endeavor reflects our dedication to exploring innovative ideas despite the inherent constraints.
+
+## Technology Stack
+The project utilizes the following technology stack:
+* Vite
+* React
+* JavaScript
+* HTML5
+* Tailwind CSS
+* Sass
+* npm
+* Git/GitHub
+* Vercel
+These technologies have been employed collaboratively to create a robust and efficient foundation for the project's development and deployment.
+
 ## Key Functions
 ### Your Channels
 Manage and customize the channels you have joined on Shopify Hub.
