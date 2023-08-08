@@ -16,6 +16,7 @@ The project utilizes the following technology stack:
 * npm
 * Git/GitHub
 * Vercel
+
 These technologies have been employed collaboratively to create a robust and efficient foundation for the project's development and deployment.
 
 ## Key Functions
